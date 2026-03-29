@@ -1,0 +1,214 @@
+const menu = [
+  {
+    "category":"Top Sellers",
+    "items":[
+      {"name":"Butter Chicken","description":"Tandoori roasted chicken tikka pieces with a sauce of onions garam masala cream and tomatoes","price":19.80},
+      {"name":"Saffron Rice","description":"","price":5.50},
+      {"name":"Plain Rice","description":"","price":4.40},
+      {"name":"Chicken 65 Biryani (GF)","description":"Spicy Chicken 65 blended with fragrant basmati rice, layered with masala, herbs.","price":17.60},
+      {"name":"Paneer 65 Biryani","description":"Battered Paneer deep fried and Tossed in special 65 sauce and serve with basmati rice.","price":16.50},
+      {"name":"Mango Lassi","description":"","price":5.50}
+    ]
+  },
+  {
+    "category":"South Indian Home Food",
+    "items":[
+      {"name":"Vada (2 Pcs)","description":"Deep fried lentil fritters served with Sambhar and peanut sauce.","price":8.80},
+      {"name":"Idly (2 Pcs)","description":"Steamed rice cakes served with peanut sauce and sambhar.","price":8.80},
+      {"name":"Idli / Vada / Dipped","description":"One piece Idly and one piece vada dipped in sambhar.","price":9.90},
+      {"name":"Plain Dosa","description":"A crepe made from fermented batter of rice & black lentils.","price":9.90},
+      {"name":"Ghee Podi Dosa","description":"A mixture of dal, lentils, seeds and spices spread with dosa.","price":11.00},
+      {"name":"Curry Leaf Dosa","description":"Roasted curry leaf and roasted lentils powder.","price":11.00},
+      {"name":"Onion Dosa","description":"Dosa stuffed with fine chopped onions.","price":11.00},
+      {"name":"Onion Podi Dosa","description":"A mixture of dal, lentils, seeds and spices spread inside the dosa.","price":11.00},
+      {"name":"Masala Dosa","description":"Dosa with potato filling.","price":15.40},
+      {"name":"Mysore Masala Dosa","description":"Dosa with spiced red chutney & potato filling.","price":15.40},
+      {"name":"Paneer Dosa","description":"Dosa filled with Indian cottage cheese.","price":15.40},
+      {"name":"Cheese Chilli Dosa","description":"Dosa stuffed with cheese and chili sauce.","price":15.40},
+      {"name":"Uttapam (Onion/Veggies)","description":"Uttapam stuffed with onion & vegetables.","price":15.40},
+      {"name":"Rava Dosa (Onion/Masala)","description":"Crepe made with semolina cream of wheat batter and spices.","price":15.40}
+    ]
+  },
+  {
+    "category":"Royal Indian Entree",
+    "items":[
+      {"name":"Samosa (2 Pcs)","description":"Triangle pastries filled with lightly spiced mashed potato & green peas.","price":8.80},
+      {"name":"Samosa Chat","description":"Samosa, chickpea curry, chutneys & spices.","price":11.00},
+      {"name":"Paneer Pakora","description":"Deep fried Paneer with spices dipped in chickpea flour.","price":16.50},
+      {"name":"Mirchi Baji","description":"Deep fried green chilli dipped in chickpea flour.","price":11.00},
+      {"name":"Cut Mirchi","description":"Chopped green chilli fritters.","price":11.00},
+      {"name":"Vegetable Pakoda (4 Pcs)","description":"Mixed vegetables deep fried in chickpea flour.","price":11.00},
+      {"name":"Paneer Tikka","description":"Paneer marinated and tandoori roasted served with mint sauce.","price":16.50},
+      {"name":"Crispy Babycorn","description":"Spicy battered & fried babycorn.","price":16.50},
+      {"name":"Chilli Gobi","description":"","price":16.50},
+      {"name":"Chilli Paneer","description":"","price":16.50},
+      {"name":"Chilli Mushroom","description":"","price":16.50},
+      {"name":"Chilli Chicken","description":"","price":16.50},
+      {"name":"Chilli Prawn","description":"","price":18.70},
+      {"name":"Manchurian","description":"Deep fried with exotic and mild spices in Manchurian sauce.","price":16.50},
+      {"name":"65","description":"","price":16.50},
+      {"name":"Chicken Lollipop (5 Pcs)","description":"Fried chicken marinated with corn flour & spices.","price":16.50},
+      {"name":"Chicken Pakora","description":"Chicken cubes in flavoured batter & gram flour.","price":16.50},
+      {"name":"Ginger Chicken","description":"Crispy chicken tossed in ginger sauce.","price":16.50},
+      {"name":"Schezwan Chicken","description":"Deep fried chicken with hot red chillies.","price":16.50},
+      {"name":"Black Pepper Chicken (Dry)","description":"Fresh fried chicken with curry leaf & black pepper.","price":16.50},
+      {"name":"Tandoori Chicken","description":"Chicken marinated in special sauce & grilled.","price":15.40},
+      {"name":"Chicken Tikka","description":"Boneless chicken marinated & tandoori roasted.","price":15.40},
+      {"name":"Sheekh Kebab","description":"Minced meat grilled in skewers with onions & mint sauce.","price":16.50},
+      {"name":"Tawa Fish","description":"Spiced Basa fish fillet cooked on hot plate.","price":17.60},
+      {"name":"Fish Pakora","description":"Fish cubes in batter & fried served with mint sauce.","price":16.50},
+      {"name":"Amritsari Fish Pakora","description":"Fish cubes deep fried with chick pea flour.","price":17.60},
+      {"name":"Crispy Prawns","description":"Prawns in batter & deep fried.","price":18.70},
+      {"name":"Crispy Goat","description":"Crispy fried spiced goat pieces.","price":17.60}
+    ]
+  },
+  {
+    "category":"Hyderabadi Biryanis",
+    "items":[
+      {"name":"Vegetable Dum Biryani","description":"Slow-cooked basmati rice with spiced vegetables, sealed and simmered for rich, aromatic biryani perfection.","price":16.50},
+      {"name":"Paneer 65 Biryani","description":"Battered Paneer deep fried and Tossed in special 65 sauce and serve with basmati rice.","price":16.50},
+      {"name":"Gobi 65 Biryani","description":"Crispy Gobi 65 tossed in spiced basmati rice, layered with herbs and aromatic biryani masala.","price":16.50},
+      {"name":"Chicken Dum Biryani","description":"Tender chicken marinated in spices, layered with basmati rice, and dum-cooked for rich, flavorful aroma.","price":17.60},
+      {"name":"Chicken 65 Biryani (GF)","description":"Spicy Chicken 65 blended with fragrant basmati rice, layered with masala, herbs.","price":17.60},
+      {"name":"Goast Dum Biryani","description":"Juicy goat meat slow-cooked with basmati rice, aromatic spices, and herbs in traditional dum biryani style.","price":18.70}
+    ]
+  },
+  {
+    "category":"Biryani Deals (Family / Jumbo)",
+    "items":[
+      {"name":"D1. Vegetable Dum Biryani","description":"","price":55.00},
+      {"name":"D2. Chicken Dum Biryani","description":"","price":66.00},
+      {"name":"D3. Goat Dum Biryani","description":"","price":71.50},
+      {"name":"D4. Chicken 65 Biryani","description":"","price":66.00},
+      {"name":"B4. Paneer 65 Biryani","description":"","price":60.50},
+      {"name":"B5. Gobi 65 Biryani","description":"","price":60.50}
+    ]
+  },
+  {
+    "category":"Fried Rice & Noodles / Schezwan",
+    "items":[
+      {"name":"Vegetarian Fried Rice","description":"Fried rice with choice of szechuan sauce","price":15.40},
+      {"name":"Egg Fried Rice","description":"","price":16.50},
+      {"name":"Chicken Fried Rice","description":"","price":16.50},
+      {"name":"Prawn Fried Rice","description":"","price":17.60},
+      {"name":"Mixed Fried Rice","description":"","price":18.70},
+      {"name":"Vegetarian Noodles","description":"","price":15.40},
+      {"name":"Egg Noodles","description":"","price":16.50},
+      {"name":"Chicken Noodles","description":"","price":16.50},
+      {"name":"Prawn Noodles","description":"","price":17.60},
+      {"name":"Mixed Noodles","description":"","price":18.70}
+    ]
+  },
+  {
+    "category":"Fried Rice & Noodles Mega Deals (Family / Jumbo)",
+    "items":[
+      {"name":"Vegetarian Fried Rice","description":"","price":55.00},
+      {"name":"Egg Fried Rice","description":"","price":60.50},
+      {"name":"Chicken Fried Rice","description":"","price":66.00},
+      {"name":"Prawn Fried Rice","description":"","price":71.50},
+      {"name":"Mixed Fried Rice","description":"","price":77.00},
+      {"name":"Vegetarian Noodles","description":"","price":55.00},
+      {"name":"Egg Noodles","description":"","price":55.00},
+      {"name":"Chicken Noodles","description":"","price":66.00},
+      {"name":"Prawn Noodles","description":"","price":71.50},
+      {"name":"Mixed Noodles","description":"","price":77.00}
+    ]
+  },
+  {
+    "category":"Non-Veg Curries",
+    "items":[
+      {"name":"Butter Chicken","description":"Tandoori roasted chicken tikka pieces with a sauce of onions garam masala cream and tomatoes","price":19.80},
+      {"name":"Chicken Tikka Masala","description":"Tandoori roasted chicken based onion tomato gravy and added fresh capsicum and onion cubes","price":19.80},
+      {"name":"Chicken Madras","description":"Pieces of chicken in rich tomato and cream base cooked in steam.","price":19.80},
+      {"name":"Chicken Chettinad","description":"South Indian coconut based chicken cooked with ground spices and curry leaves.","price":19.80},
+      {"name":"Kadhai Chicken","description":"Chicken cooked with yoghurt, capsicum, onion & tomato gravy.","price":19.80},
+      {"name":"Chicken Vindaloo","description":"Hot & spicy Goan dish cooked with vinegar & spicy sauce.","price":19.80},
+      {"name":"Saag Chicken","description":"Chicken cubes simmered with spinach & spices.","price":19.80},
+      {"name":"Egg Bhurji","description":"Scrambled eggs cooked in onion tomatoe base gravy.","price":16.50},
+      {"name":"Egg Curry","description":"Boiled eggs simmered in onion based curry with coriander.","price":16.50},
+      {"name":"Lamb Rogan Josh","description":"Lamb cooked in a rich, aromatic gravy flavored with Kashmiri spices.","price":20.90},
+      {"name":"Saag Lamb","description":"Lamb cubes simmered with fresh spinach & mild spices.","price":20.90},
+      {"name":"Lamb Kadhai","description":"Lamb pieces cooked with onion, capsicum, yoghurt and aromatic Indian spices.","price":20.90},
+      {"name":"Lamb Vindaloo","description":"Lamb in spice Goan style curry.","price":20.90},
+      {"name":"Lamb Sabzi","description":"Lamb with fresh vegetables.","price":22.00},
+      {"name":"Beef Korma","description":"Mild gravy of cubed beef enriched with onion cashew gravy and finished with cream.","price":20.90},
+      {"name":"Beef Vindaloo","description":"Tangy beef simmered in freshly ground spices with the dash of vinegar.","price":20.90},
+      {"name":"Kadhai Beef","description":"Merinated beef cooked with onion, fried capsicum.","price":22.00},
+      {"name":"Beef Fry","description":"Semi-Dry beef cubes cooked with chef special masala.","price":22.00},
+      {"name":"Goat Curry","description":"Goat meat cooked in a traditional curry with Indian spices.","price":20.90},
+      {"name":"Goat Vindaloo","description":"Hot & spicy Goan dish with freshly grounded spices and chili cooked in vinegar.","price":20.90},
+      {"name":"Goat Chettinad","description":"Onion-based coconut gravy with goat cooked with curry leaves and southern spices.","price":20.90},
+      {"name":"Kadhai Goat","description":"Made with red onion, tomato, green bell pepper, yoghurt, and authentic Indian spices.","price":22.00},
+      {"name":"Mutton Sukha","description":"Semi-Dry mutton cooked with onion masala with special authentic spices.","price":23.10},
+      {"name":"Goan Fish Curry","description":"Fish cooked with onion tomato based gravy & gently spiced with aromatic seasonings.","price":22.00},
+      {"name":"Spicy Fish Curry","description":"Fish cooked in special south indian style with extra spices.","price":22.00},
+      {"name":"Prawn Masala","description":"Prawn cooked with onion tomato based gravy & lightly spiced with cream & herbs.","price":22.00},
+      {"name":"Kerala Prawn Curry","description":"Prawns cooked with special kerala masala and with touch of coconut.","price":22.00}
+    ]
+  },
+  {
+    "category":"Veg Curries",
+    "items":[
+      {"name":"Dal Makhani","description":"Black lentils, butter, garlic & cream slow-cooked overnight with traditional Indian spices.","price":16.50},
+      {"name":"Palak Paneer","description":"Cottage cheese cooked in creamy spinach sauce & chef's special spice mix.","price":16.50},
+      {"name":"Kadhai Paneer","description":"Cottage cheese cooked with onion, capsicum, yoghurt & Indian spices.","price":17.60},
+      {"name":"Shahi Paneer","description":"Ricotta cubes cooked with herbs and spices comes with cashew.","price":16.50},
+      {"name":"Paneer Butter Masala","description":"Cottage cheese cooked in a rich tomato sauce with cream & butter.","price":16.50},
+      {"name":"Paneer Tikka Masala","description":"Paneer cooked in onion-tomato base gravy & added with capsicum.","price":16.50},
+      {"name":"Paneer Bhurji","description":"Mashed cottage cheese cooked with onion based gravy.","price":16.50},
+      {"name":"Veggie Malai Kofta","description":"Cheese dumplings cooked in creamy sauce.","price":16.50},
+      {"name":"Mix Vegetable Korma","description":"Seasonal vegetables cooked in onion tomato masala.","price":16.50},
+      {"name":"Eggplant Masala","description":"Unique blend of eggplant, capsicum, onion, tomatoe and spices.","price":16.50},
+      {"name":"Aloo Ghobi","description":"Potato and cauliflower tossed in onion tomatoe masala with little spice.","price":16.50},
+      {"name":"Chana Masala","description":"Chickpea curry with onion masala and some chef special spices.","price":16.50},
+      {"name":"Mushroom Peas Curry","description":"Mushroom and peas cooked together with onion cashew base gravy.","price":16.50},
+      {"name":"Rajma Curry","description":"Kidney beans simmered in onion and tomato based curry.","price":16.50}
+    ]
+  },
+  {
+    "category":"Rice / Breads",
+    "items":[
+      {"name":"Plain Rice","description":"","price":4.40},
+      {"name":"Saffron Rice","description":"","price":5.50},
+      {"name":"Jeera Rice","description":"","price":8.80},
+      {"name":"Plain Roti","description":"","price":3.90},
+      {"name":"Butter Roti","description":"","price":5.00},
+      {"name":"Garlic Roti","description":"","price":5.00},
+      {"name":"Plain Naan","description":"","price":4.40},
+      {"name":"Butter Naan","description":"","price":5.00},
+      {"name":"Garlic Naan","description":"","price":5.00},
+      {"name":"Cheese Naan","description":"","price":6.00},
+      {"name":"Cheese Garlic Naan","description":"","price":6.60},
+      {"name":"Chicken Tikka Naan","description":"","price":6.60},
+      {"name":"Kerela Paratha (2 Pcs)","description":"","price":7.70},
+      {"name":"Cholle Bhatura","description":"","price":16.50}
+    ]
+  },
+  {
+    "category":"Accompaniments",
+    "items":[
+      {"name":"Papad","description":"","price":4.40},
+      {"name":"Tandoori Papad","description":"","price":5.50},
+      {"name":"Raita","description":"","price":4.40},
+      {"name":"Onion Salad","description":"","price":4.40},
+      {"name":"Garden Salad","description":"","price":4.40}
+    ]
+  },
+  {
+    "category":"Desserts",
+    "items":[
+      {"name":"Gulab Jamun (2 Pcs)","description":"","price":6.60},
+      {"name":"Kulfi","description":"","price":4.90}
+    ]
+  },
+  {
+    "category":"Drinks",
+    "items":[
+      {"name":"Soft Drink","description":"Coke, lemonade, sprite, or fanta","price":3.30},
+      {"name":"Mango Lassi","description":"","price":5.50},
+      {"name":"Soft Drink (Bottle Drink)","description":"","price":7.70},
+      {"name":"Tea","description":"","price":4.40}
+    ]
+  }
+];
+<script src="script.js"></script>

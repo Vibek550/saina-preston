@@ -1,0 +1,6 @@
+images/
+ ├ butter-chicken.jpg
+ ├ saffron-rice.jpg
+ ├ plain-rice.jpg
+ ├ chicken-65-biryani.jpg
+ … (etc.)

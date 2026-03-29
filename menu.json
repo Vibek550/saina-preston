@@ -1,0 +1,10 @@
+[
+  {
+    "category":"Top Sellers",
+    "items":[
+      {"name":"Butter Chicken","description":"Tandoori roasted chicken tikka pieces…","price":19.80},
+      …
+    ]
+  },
+  …
+]
